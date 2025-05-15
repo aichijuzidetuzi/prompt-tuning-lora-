@@ -3,7 +3,7 @@ from datasets import load_dataset
 dataset = load_dataset("ag_news")
 print(dataset["train"][0])  # 输出示例：{'text': '...', 'label': 3}
 
-
+from transformers import AutoModelForSequenceClassification, AutoTokenizer, Trainer, TrainingArguments
 
 from peft import LoraConfig, get_peft_model
 from transformers import AutoModelForSequenceClassification
